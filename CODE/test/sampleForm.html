@@ -7,19 +7,74 @@
     <title>Document</title>
 </head>
 <body>
-    <!--사용자와 소통할 수 있도록 만들어주는것이 form-->
-    <!--
-        form태그는 action과 method 속성을 필수적으로 가주고있어야한다.
-        > action속성이란
-    -->
+
     <form action="../test/result.html" method ="get">
-        <div>
-            ID : <input name = "id" type="text">
-        </div>
-        <div>
-            PW : <input name = "password" type="password">
-        </div>
-        <input type="submit" value ="로그인">
+       <select name="color">
+            <option value="red">빨간색</option>
+            <option value="blue">파란색</option>
+            <option value="green">초록색</option>
+       </select>
+       <div>
+            <label>모자 : <!--1번째-->
+                <input type="checkbox" name = "kind" value="hat">
+            </label>
+            <label for="top">상의 : </label>
+            <input id = "top" type="checkbox" name = "kind" value="top">
+            하의 : <input type="checkbox" name = "kind" value="bottom">
+            양말 : <input type="checkbox" name = "kind" value="socks">
+       </div>
+       <div>
+            남자 : <input type="radio" name ="gender" value="man">
+            여자 : <input type="radio" name ="gender" value="woman">
+       </div>
+       <input type="submit" value="제출">
     </form>
 </body>
 </html>
+
+    <!--사용자와 소통할 수 있도록 만들어주는것이 form-->
+    <!--
+        form태그는 action과 method 속성을 필수적으로 가주고있어야한다.
+        1. action속성이란 form태그가 
+        input type="submit"의해 사용자가 정보를 제출하였을때 어디로 요청을 보내야되는가에 대한 정보를 가지고있는것
+        2. method속성이란 form태그가 제출되었을때 어떠한 방식으로 form태그의 정보를 전달할지
+          >get(사용자 입력한 정보를 url에 표현해주고  ? 분기로 정보를 표현해준다.) : 
+            url(어떠한 페이지에 접속한지)
+            , ?(분기로 정보를 표현해준다)
+            , &(한개 이상의 정보를 전달을 해줄때 )
+            , name=사용자가입력한 값
+          >post(서버에 요청을 보낸다. 사용자가 어떠한 정보를 보냈는지 표현하지않는다.) : 
+            ?표를 분기로 정보를 가주고 서버에서 처리한다.
+          >put
+          >delete
+    -->
+
+    <!--input태그란 사용자에게 값을 입력받는 것
+        input태그는 type과 name 속성을 필수적으로 가주고 있어야한다.
+        type이라는 속성으로 인해 어떠한 값을 주는지에 따라 사용자의 값을 받을수 있다.
+        >value : 사용자에게 값을 받아온다. (사용자에게 값을 받아오기때문에 일반적으로 비워둔다.)
+        >placeholder : 사용자가 어떤 값을 써야하는지 알려줄수있다. ex)주민등록번호형식
+        >password : 비밀번호
+        >email : 이메일 형식으로 값을 받는다.
+        >submit : 버튼의 형태로 만들어준다.(value 속성을 사용해 버튼명을 만들수 있다.)
+    -->
+
+    <!--select 사용자 어떠한 선택을 하였는지 정보를 전달을 전달해준다. 
+        >multuple 속성은  선택을 여러개 할 수 있다.(사용자에 따라서 효과적인 방법은아니다.)
+        option로 dropdownList를 만들수있다.
+        value속성을 지운다면 label 값이 url에 보여진다.
+        >label은 사용자에게 보여지는 값 (정보를 쉽게 처리할수있도록 value속성을 써준다.)
+        
+    -->
+
+    <!--다중선택이 필요시 checkBox를 일반적으로 사용한다.
+        value 속성을 주어야 한다.
+        radio type은 같은 name을 사용하게 되면 여러개중 하나만 선택할 수 있게된다.
+    -->
+
+    <!--label태그는 input태그와 다른태그와 연결되어서 사용되고 태그들이 어떤깂을 나타내고 있는지 알려주는것
+        2가지 방법이 있는데 
+        1번째는 label태그로 감싸준다.
+        2번째는 태그를 감쌀수 없는 상황에 사용한다.
+        연결되어있다면 연결된 태그들이 반응 하게 된다.
+    -->
