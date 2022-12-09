@@ -1,0 +1,18 @@
+.wrap{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: whitesmoke;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formSection{
+    background-color: white;
+    border: 1px solid #c6c6c6;
+    max-width: 470px;/*width 최대값 최대한이거보다는 커지지 않는다.*/
+    padding: 20px;
+}
+
