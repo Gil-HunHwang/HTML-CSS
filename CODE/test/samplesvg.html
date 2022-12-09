@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            width: 16px;
+            height: 16px;
+            background-image: url(../test/samplesvg.svg);
+        } */
+        button{
+            border-color: white;
+            border: 1px solid #c6c6c6c6;
+            border-radius: 15px;
+        }
+    </style>
+    <!--
+        외부의 css파일을 가져올수 있는데 이방법은 장단점이있다.
+        1. 제공해주는 서비스가 다운되면 우리 웹사이트에 정의되있는거도 사용할수 없게된다.
+        2. 우리가 필요로하지않는 css를 들고오기때문에 웹사이트가 무거워질수도있다.
+        3. 필요한 것만 가져오는 방식은 시간이 많이든다.
+        
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--(https://icons.getbootstrap.com/
+         ,https://fontawesome.com/)
+        input value 버튼을 주는것 버튼안에 value속으로만 텍스트를 전달할수있다.
+        button 컨텍츠로 버튼을 주는것 컨텍츠를 받을 수 있기 때문에 다른 태그가 들어가도된다.
+        button에 img를 넣고싶을때 사용된다. (일반적인 이미지가아닌 이모티콘을 넣어줘야한다.)
+        svg는 벡터데이터를 시각화 시켜주는 태그이다.
+        svg는 W3S곳에 만든 태그로 국제표준으로 사용하고있는 태그이다.
+        (vector data, bitmap data) 차이를 알아둬야한다.
+        vector data같은경우 그래픽이 어떤 부분에서 어떤모양으로 휘어지는지 어떤 색으로 채워지는 그 정보를 담고있기때문에
+        이미지를 확대를해도 이미지를 꺠지지않는다.
+        bitmap data같은경우 사용하는  기기의 브라우저 해상도에 맞게 
+        하나의 픽셀로 이루어져있는것처럼 격자형태 하나하나에 정보를 담고있다
+    -->
+    <!-- <img src="../test/samplesvg.svg" alt=""> img 태그로써 불러올수도있다.
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-0-circle" viewBox="0 0 16 16">
+        <path d="M7.988 12.158c-1.851 0-2.941-1.57-2.941-3.99V7.84c0-2.408 1.101-3.996 2.965-3.996 1.857 0 2.935 1.57 2.935 3.996v.328c0 2.408-1.101 3.99-2.959 3.99ZM8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895Z"/>
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z"/>
+    </svg>svg태그를 사용하는방법 -->
+    <button>
+        <i class="fa-solid fa-heart"></i>
+    </button>
+    <!-- <div>
+
+    </div> -->
+</body>
+
+</html>
