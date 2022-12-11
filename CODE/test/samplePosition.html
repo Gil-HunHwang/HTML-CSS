@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        1. position 어떤 위치에 다가 태그를 렌더링 시킬지 설정할 수 있다.
+        > 태그들은 좌표값을 가지고 있다.
+        2. media-query 핸드폰에서 볼수 있는 css
+        3. transition / animotion 
+        position: absolute; /* 부모가 기준 된다.*/
+        position: fixed; /* 브라우저가 기준*/
+        position: relative; /* 원래 내 위치가 기준*/
+        position: static; /*기준이 없다. 좌표적용이 안된다.*/
+        position속성이 부여된게 우선순위가 부여된다.
+        컨텐츠가 겹치면 z-index 1(높은순으로 우선순위 부여)
+    -->
+    <style>
+        body{
+            margin: 0px;
+        }
+        .bg{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            opacity: 0.5;
+        }
+        .modal{
+            width: 200px;
+            height: 100px;
+
+            background-color: white;
+            border: 1px solid lightblue;
+
+            border-radius:  14px;
+
+            position: fixed;
+            z-index: 1;
+
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem, quas dolores vel recusandae voluptatum minima itaque optio assumenda esse distinctio. Beatae saepe quibusdam excepturi magnam voluptatibus ratione eveniet fuga.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum facilis aliquam aspernatur odit. Enim accusamus id aliquid ratione, natus unde? Delectus quasi eligendi fugiat, dolorem eum eius corrupti non accusamus.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum facilis aliquam aspernatur odit. Enim accusamus id aliquid ratione, natus unde? Delectus quasi eligendi fugiat, dolorem eum eius corrupti non accusamus.</p>
+    <div class="bg"></div>
+    <div class="modal"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum natus facilis dicta. Modi debitis dolorem nihil unde, possimus consectetur placeat, sint provident ea quidem, corrupti id officia expedita repellendus sunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum natus facilis dicta. Modi debitis dolorem nihil unde, possimus consectetur placeat, sint provident ea quidem, corrupti id officia expedita repellendus sunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum natus facilis dicta. Modi debitis dolorem nihil unde, possimus consectetur placeat, sint provident ea quidem, corrupti id officia expedita repellendus sunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum natus facilis dicta. Modi debitis dolorem nihil unde, possimus consectetur placeat, sint provident ea quidem, corrupti id officia expedita repellendus sunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum natus facilis dicta. Modi debitis dolorem nihil unde, possimus consectetur placeat, sint provident ea quidem, corrupti id officia expedita repellendus sunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum natus facilis dicta. Modi debitis dolorem nihil unde, possimus consectetur placeat, sint provident ea quidem, corrupti id officia expedita repellendus sunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum natus facilis dicta. Modi debitis dolorem nihil unde, possimus consectetur placeat, sint provident ea quidem, corrupti id officia expedita repellendus sunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum natus facilis dicta. Modi debitis dolorem nihil unde, possimus consectetur placeat, sint provident ea quidem, corrupti id officia expedita repellendus sunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum natus facilis dicta. Modi debitis dolorem nihil unde, possimus consectetur placeat, sint provident ea quidem, corrupti id officia expedita repellendus sunt.</p>
+</body>
+
+</html>

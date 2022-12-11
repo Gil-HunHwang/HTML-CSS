@@ -1,0 +1,25 @@
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red; 
+}
+
+@media screen and(max-width:1260px){
+    .box{
+        background-color: red;
+    }
+}
+
+@media screen and(max-width:768px){
+    .box{
+        background-color: blue;
+    }
+}
+
+@media screen and(max-width:576px){
+    .box{
+        background-color: green;
+    }
+}
+/*Media Query 같은경우 css 맨 마지막에 사용이된다.
+  속성이 겹쳤을경우 맨밑에껄 하기때문에*/
