@@ -56,7 +56,7 @@ header .gnb .gnb-menu{
 }
 
 header .gnb .gnb-menu ul{
-    width: 70%;
+    width: 40%;
     display: flex;
     justify-content: space-evenly;
     margin: 0 auto;
@@ -201,7 +201,7 @@ header .gnb .search .searchUl li span{
     font-weight : bold;
     line-height: 1.8rem;
 
-    margin-top: 2rem;
+    
 }
 
 .notice button{
@@ -211,6 +211,7 @@ header .gnb .search .searchUl li span{
     background-color: inherit;/*현재 background color 들고온다.*/
     font-weight: bold;
     border-radius: 14px;
+    margin-top: 2rem;
 }
 
 /*mainBanner*/
