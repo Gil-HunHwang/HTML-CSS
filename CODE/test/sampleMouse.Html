@@ -5,13 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../test/sampleMouse.css">
 </head>
 <body>
+    <h1>x : <span id = "x"></span>, y : <span id="y"></span></h1>
+    <div id="cursor"></div>
     <script>
         window.addEventListener("mousemove",MouseTracking);
+        var x = document.querySelector("#x");
+        var y = document.querySelector("#y");
+        var cursor = document.querySelector("#cursor");
+
 
         function MouseTracking(event) {
-            console.log(event);
+            x.innerHTML = event.clientX;
+            y.innerHTML = event.clientY;
+            cursor.style.top = event.clientY + "px";
+            cursor.style.left = event.clientX + "px";
         }
 
     </script>
