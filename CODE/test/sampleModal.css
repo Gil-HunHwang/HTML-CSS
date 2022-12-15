@@ -1,0 +1,28 @@
+body, p{
+    margin: 0px;
+}
+
+.modalDiv{
+    display: none; /*display는 transition적용되지않는다*/
+    transition: all 1s ease-in-out;
+}
+
+.bg{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.modal{
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    width: 50%;
+    left: 25%;
+    top: 25%;
+    padding: 20px;
+    border-radius: 14px;
+}

@@ -1,0 +1,51 @@
+.body{
+    margin: 20px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background-image: url("../img/ProfileImg.png");
+    background-position: center;
+    background-size: cover;
+    border: 1px solid lightgrey;
+    border-radius: 14px;
+    position: relative;
+    overflow: hidden;
+}
+/*
+    https://developer.mozilla.org/en-US/docs/Web/CSS/transition 참조
+    timing-fuction 이다.
+    transition: all 0.5s; 정비례로 변한다 
+    ease : 
+    ease-in : 천천히 변하다 빠르게 변하다
+    ease-out : 빠르게 변하다 천천히 변하다
+    ease-in-out : 천천히 변하다 빠르게 변하다 다시 천천히
+*/
+.box-overloay{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    background-color:blue;
+    top: 100px;
+    left:0;
+    transition: ease-in-out 0.5s;/**/
+}
+
+.box-overloay p{
+    margin: 0px;
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.box:hover .box-overloay{
+    top: 0px;
+}

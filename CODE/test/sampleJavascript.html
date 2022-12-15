@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="../test/sampleJavascript.css">
+</head>
+
+<body>
+    
+    <div id="box">
+
+    </div>
+
+    <script>
+        //1. js는 태초부터 웹 ui를 제어하기 위한 언어였다.
+        //document.getElementById 문서의 요소,클래스(배열)
+        //console.log("안녕하세요"); 콘솔창에 안녕하세요가 보인다.
+        //onclick 여기서 on은 무엇무엇을 기다린다
+        /*
+            1. js로 제어하고 싶은 html 태그를 선택
+            var boxSelect = document.getElementById("box"); 
+        */
+        /*
+            2. 어떤 이벤트가 발생했을 때 제어할 것인지 선택
+            boxSelect.addEventListener("click", function(){
+            });
+        */
+        /*
+            3. css를 변경
+        */
+        
+        var boxSelect = document.getElementById("box"); 
+
+        boxSelect.addEventListener("mouseover", function(){
+            boxSelect.style.width = "200px";
+        });
+      
+        boxSelect.addEventListener("mouseout", function(){
+            boxSelect.style.width = "100px";
+        });
+
+    </script>
+</body>
+
+</html>
