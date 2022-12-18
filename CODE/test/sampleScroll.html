@@ -29,8 +29,9 @@
             var documentHeight = document.documentElement.scrollHeight;
             var browserHeight = window.innerHeight;
             scrollY = document.documentElement.scrollTop;
-            var percent = scrollY / (documentHeight - browserHeight) * 100 + "%";
-            //traget.style.height = percent;
+            var percent = scrollY / (documentHeight - browserHeight) * 100;
+            //traget.style.height = Math.round(percent) + "%";
+            traget.style.width = Math.round(percent) + "%";
         })
     </script>
 

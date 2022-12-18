@@ -1,0 +1,52 @@
+footer, aside, article, section, nav, header {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout {
+  width: 150px;
+  height: 170px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "header header" "nav nav" "section aside" "article aside" "footer footer";
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+section {
+  grid-area: section;
+}
+
+article {
+  grid-area: article;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
