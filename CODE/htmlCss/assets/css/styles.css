@@ -227,6 +227,37 @@ textarea::-webkit-outer-spin-button {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: -0.3px;
+  color: #333;
+}
+.order-info-area .title .ico-n-logo {
+  margin-right: 6px;
+  width: 24px;
+  height: 24px;
+}
+
+.tab-switch-box {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+.tab-switch-box .tab-switch {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.06);
+  line-height: 40px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #666;
+  letter-spacing: -0.3px;
+  text-align: center;
+}
+.tab-switch-box .tab-switch.is-active {
+  position: relative;
+  flex-grow: 1.2;
+  border: 1px solid #333;
+  background-color: #fff;
+  font-size: 15px;
+  color: #333;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
 }
 
 .dimmed-layer {
